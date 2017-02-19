@@ -1,0 +1,27 @@
+{
+  "name": "code_challenge",
+  "version": "1.0.0",
+  "description": "a hands-on coding quiz used by Juniper Networks Contrail team",
+  "main": "index.js",
+  "dependencies": {
+    "local-web-server": "^1.2.6"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "ws"
+  },
+  "keywords": [
+    "code",
+    "challenge",
+    "Juniper",
+    "Networks",
+    "Contrail"
+  ],
+  "author": "",
+  "license": "ISC",
+
+  "local-web-server": {
+    "port": 8000
+  }
+}

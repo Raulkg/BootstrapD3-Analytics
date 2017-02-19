@@ -1,0 +1,56 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden;
+}
+
+.demoContainer {
+    display: flex;
+    justify-content: space-around;
+    height: 100%;
+}
+
+.demoSectionWrapepr {
+    display: inline-block;
+    width: 98%;
+}
+
+.demoResponseList {
+    background-color: lightgrey;
+    margin: 0;
+    padding-right: 5px;
+    overflow-y: scroll;
+    height: calc(100% - 3px * 2 * 12);
+}
+
+.demoResponseList li {
+    list-style-type: decimal;
+    padding: 3px 0;
+    word-wrap: break-word;
+}
+
+.demoResponseList li + li {
+    border-top: 1px solid black; 
+}
+
+
+path.link {
+  fill: none;
+  stroke: #666;
+  stroke-width: 1.5px;
+}
+
+.links line {
+  stroke: #999;
+  stroke-opacity: 0.6;
+}
+
+.nodes circle {
+  stroke: #fff;
+  stroke-width: 1.5px;
+}
+.node text {
+  pointer-events: none;
+  font: 10px sans-serif;
+}
