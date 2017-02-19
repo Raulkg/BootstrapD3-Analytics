@@ -24,15 +24,54 @@ a chart/graph that visualizes the response of the REST APIs.
 
 ### Pre-Requisites for Running the Application:
 1. Make sure you have NodeJS (v4.x.x and above) installed globally on your machine. Find the detailed installation instruction from https://nodejs.org/en/
-2. Modern Browser - Chrome 
+2. Modern Browsers - Chrome ,firefox , Safari (Refer Browser Matrix)
 
 
 
 ### Installation:
 
-Make Sure you are in current directory to the app
+install Node.js
 
-`npm install`
+If you're using OS X or Windows, the best way to install Node.js is to use one of the installers from the Node.js download page. If you're using Linux, you can use the installer, or you can check NodeSource's binary distributions to see whether or not there's a more recent version that works with your system.
+
+To test Run below Command - version should be > v6.9.4
+
+`$ node -v`
+
+Updating npm
+
+Node comes with npm installed so you should have a version of npm. However, npm gets updated more frequently than Node does, so you'll want to make sure it's the latest version.
+
+`$ npm install npm@latest -g`
+
+
+To test Run below Command - version should be > 3.10.10
+
+`$ node -v`
+
+Clone the repository :
+
+```
+$ git clone https://github.com/Raulkg/BootstrapD3-Analytics.git
+$ cd BootstrapD3-Analytics
+$ npm install
+
+```
+
+Start server:
+
+`npm run start`
+
+Now, you can confirm the visualization result of the HTTP request/response exchanged via the specified RESTful API by accessing the following URL with browser.
+
+`http://127.0.0.1:8000/`
+
+
+
+
+
+
+
 
 # Thank you and Suggestions are welcome
 :tada::tada::tada:
