@@ -69,6 +69,26 @@ Now, you can confirm the visualization result of the HTTP request/response excha
 
 
 
+#ScreenShots:
+
+When you hover over the node the display will show a D3 Force Graph with outward and Inward connections with arrows
+[![Working](https://github.com/Raulkg/BootstrapD3-Analytics/blob/master/Screen%20Shot%202017-02-20%20at%204.48.40%20PM.png)]()
+
+When you hover over the node with the checkbox provided checked will display packet information
+[![Working](https://github.com/Raulkg/BootstrapD3-Analytics/blob/master/Screen%20Shot%202017-02-20%20at%204.48.59%20PM.png)]()
+
+A list of Statistics of current REST API Call
+[![Working](https://github.com/Raulkg/BootstrapD3-Analytics/blob/master/Screen%20Shot%202017-02-20%20at%204.49.08%20PM.png)]()
+
+A pagination Enabled Bar Graph without sorting
+[![Working](https://github.com/Raulkg/BootstrapD3-Analytics/blob/master/Screen%20Shot%202017-02-20%20at%204.49.14%20PM.png)]()
+
+A pagination Enable Bar Graph Sorted for curent view when check box checked
+[![Working](https://github.com/Raulkg/BootstrapD3-Analytics/blob/master/Screen%20Shot%202017-02-20%20at%204.49.31%20PM.png)]()
+
+
+A Realtime Graph with Streaming Path being printed . I am aware of using sockets or Streaming API but wanted to showcase my skills for displaying realtime Graph. This particular graph is limited to only one Object due to limited time .
+[![Working](https://github.com/Raulkg/BootstrapD3-Analytics/blob/master/Screen%20Shot%202017-02-20%20at%204.50.09%20PM.png)]()
 
 
 
