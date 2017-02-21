@@ -24,12 +24,12 @@ A Small web application that visualizes the network data using only limited tech
 
 ### Feature Utilization Matrix
 
-| D3 Features  | JQuery Features | Loadash Features  | Bootstrap features |
+| D3JS   Features  | JQuery Features | Loadash Features  | Bootstrap features |
 | --------- | --------- | --------- | --------- |
 | D3 - Force graph | $.Ajax | Array Manipulation | Responsive Layout |
-| D3 - easing | Jquery Selectors | Unique elements | fluid wrapper |
-| D3 - Bar Graph | Jquery Loops an | Sorting complex objects | Loaded custom fonts - Roboto |
-| D3 - Path graph | Jquery Basic functions | Header, footer and Element placement on the viewport |
+| D3 - easing Effects| Jquery Selectors | Unique elements | fluid wrapper |
+| D3 - Bar Graph | Jquery Loops and DOM Manipulation | Sorting complex objects | Loaded custom fonts - Roboto |
+| D3 - Path graph | Jquery Basic functions and Effects | Header, footer and Element placement on the viewport |
 
 
 ### Pre-Requisites for Running the Application:
@@ -88,10 +88,10 @@ Now, you can confirm the visualization result of the HTTP request/response excha
 #ScreenShots:
 
 When you first load the page it should look like below Page#1
-[![Working](https://github.com/Raulkg/BootstrapD3-Analytics/blob/master/Screen%20Shot%202017-02-20%20at%204.48.40%20PM.png)]()
+[![Working](https://github.com/Raulkg/BootstrapD3-Analytics/blob/master/Screen%20Shot%202017-02-20%20at%205.59.29%20PM.png)]()
 
 When you Scroll down it should look like below Page#2
-[![Working](https://github.com/Raulkg/BootstrapD3-Analytics/blob/master/Screen%20Shot%202017-02-20%20at%204.48.40%20PM.png)]()
+[![Working](https://github.com/Raulkg/BootstrapD3-Analytics/blob/master/Screen%20Shot%202017-02-20%20at%206.01.18%20PM.png)]()
 
 When you hover over the node the display will show a D3 Force Graph with outward and Inward connections with arrows
 [![Working](https://github.com/Raulkg/BootstrapD3-Analytics/blob/master/Screen%20Shot%202017-02-20%20at%204.48.40%20PM.png)]()
