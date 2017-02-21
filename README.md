@@ -1,6 +1,15 @@
 # Analytics web application using D3JS and Bootstrap
 
-a chart/graph that visualizes the response of the REST APIs.
+A Small web application that visualized the network data using only limited technologies like D3JS,JQuery ,Lodash and Bootstrap frameworks.
+
+
+| D3 Features Implemented | JQuery Features Implemented | Loadash Features Implemented | Bootstrap features Implemented |
+| --------- | --------- | --------- | --------- |
+| D3 - Force graph | $.Ajax | Array Manipulation | Responsive Layout |
+| D3 - easing | Jquery Selectors | Unique elements | fluid wrapper |
+| D3 - Bar Graph | Jquery Loops an | Sorting complex objects | Loaded custom fonts - Roboto |
+| D3 - Path graph | Jquery Basic functions | Header, footer and Element placement on the viewport |
+
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Working](https://img.shields.io/badge/Working-yes-brightgreen.svg)]()
@@ -10,7 +19,7 @@ a chart/graph that visualizes the response of the REST APIs.
 
 ## Browsers support 
 
-| [<img src="https://raw.githubusercontent.com/godban/browsers-support-badges/master/src/images/firefox.png" alt="Firefox" width="16px" height="16px" />](http://godban.github.io/browsers-support-badges/)</br>Firefox | [<img src="https://raw.githubusercontent.com/godban/browsers-support-badges/master/src/images/chrome.png" alt="Chrome" width="16px" height="16px" />](http://godban.github.io/browsers-support-badges/)</br>Chrome | [<img src="https://raw.githubusercontent.com/godban/browsers-support-badges/master/src/images/safari.png" alt="Safari" width="16px" height="16px" />](http://godban.github.io/browsers-support-badges/)</br>Safari |
+| [<img src="https://raw.githubusercontent.com/godban/browsers-support-badges/master/src/images/firefox.png" alt="Firefox" width="16px" height="16px" />](http://godban.github.io/browsers-support-badges/)</br>Firefox | [<img src="https://raw.githubusercontent.com/godban/browsers-support-badges/master/src/images/chrome.png" alt="Chrome" width="16px" height="16px" />](http://godban.github.io/browsers-support-badges/)</br>Chrome | [<img src="https://raw.githubusercontent.com/godban/browsers-support-badges/master/src/images/safari.png" alt="Safari" width="16px" height="16px" />]()</br>Safari |
 | --------- | --------- | --------- |
 | last 2 versions| last 2 versions| last 2 versions
 
@@ -18,13 +27,13 @@ a chart/graph that visualizes the response of the REST APIs.
 
 
 ### Requirements for Challenge:
-1. Design and implement a chart/graph that visualize the response of the aboveAPIs.
+1. Design and implement a chart/graph that visualize the response of the above APIs.
 2. Show your working charts/graphs in one page with the best look and feel that you can come up with.
 3. Create a simple instruction on how to run your work.
 
 ### Pre-Requisites for Running the Application:
 1. Make sure you have NodeJS (v4.x.x and above) installed globally on your machine. Find the detailed installation instruction from https://nodejs.org/en/
-2. Modern Browsers - Chrome ,firefox , Safari (Refer Browser Matrix)
+2. Modern Browsers - (Refer to Browser Matrix)
 
 
 
@@ -32,7 +41,8 @@ a chart/graph that visualizes the response of the REST APIs.
 
 ## install Node.js
 
-If you're using OS X or Windows, the best way to install Node.js is to use one of the installers from the Node.js download page. If you're using Linux, you can use the installer, or you can check NodeSource's binary distributions to see whether or not there's a more recent version that works with your system.
+1.If you're using OS X or Windows, the best way to install Node.js is to use one of the installers from the Node.js download page.
+2.If you're using Linux, you can use the installer, or you can check NodeSource's binary distributions to see whether or not there's a more recent version that works with your system.
 
 To test Run below Command - version should be > v6.9.4
 
