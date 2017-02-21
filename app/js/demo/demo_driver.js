@@ -77,12 +77,15 @@
          obj['nodes'].push({'id': a['destObj'] , 'type':a['destType']});
 
 });
+
+//storing in local
+  localStorage.setItem("json", JSON.stringify(obj));
  
 obj['nodes'] = _.uniqWith(obj['nodes'], _.isEqual);
- console.log(JSON.stringify(obj));
+
   var w = 1000;
     var h = 600;
-    var linkDistance=200;
+ 
 
  var svg = d3.select("svg"),
     width = +svg.attr("width"),
@@ -123,12 +126,12 @@ var simulation = d3.forceSimulation()
    var pathtext = svg.append("svg:g").selectAll("path")
   .data(obj.links)
   .enter().append("text")
-   .append("textPath") //append a textPath to the text element
-    .attr("xlink:href", function (d) { return "#path"+d.myid; }) //place the ID of the path here
-    .style("text-anchor","middle") //place the text halfway on the arc
+   .append("textPath") 
+    .attr("xlink:href", function (d) { return "#path"+d.myid; }) 
+    .style("text-anchor","middle") 
     .attr("startOffset", "50%") 
     .style("display","none")    
-    .text(function (d) { return "packets: "+d.packets; }); 
+    .text(function (d) { return "packets: "+d.packets+ "- traffic:"+d.traffic; }); 
 
   
 
@@ -160,8 +163,9 @@ node.on('mouseover', function(d) {
       return "#ccc";
     });
 
+
    pathtext.style('display', function(l) {
-    if (d === l.source || d === l.target)
+    if ((d === l.source || d === l.target) && $("#cloudcheck").is(":checked"))
       return "block";
     else
       return "none";
@@ -176,7 +180,7 @@ node.on('mouseout', function() {
   
 });
 
- 
+
 
 
 
@@ -204,6 +208,37 @@ node.on('mouseout', function() {
 
   simulation.force("link")
       .links(obj.links);
+
+
+
+$(window).resize(function(){
+    x = w.innerWidth ;
+    y = w.innerHeight;
+
+    svg.attr("width", x).attr("height", y);
+
+
+});
+
+var maxPackets = {source:0,target:0,packets:0}  ;
+var maxTraffic = {source:0,target:0,traffic:0} ;
+$.each(obj.links, function (i, item) {
+
+if(item.packets > maxPackets.packets)
+      { maxPackets.packets = item.packets; maxPackets.source =item.source;maxPackets.target=item.target;}
+
+if(item.traffic > maxTraffic.traffic)
+      { maxTraffic = item; maxTraffic.source =item.source;maxTraffic.target=item.target;}
+
+
+
+
+
+});
+
+$('#chartPreferences').append( "<p class='category'>Highest Traffic :"+maxTraffic.traffic+"<br/> From: "+maxTraffic.source.id+" -> To: "+ maxTraffic.target.id+"</p><br/>");
+$('#chartPreferences').append( "<p class='category'>Highest Packets :"+maxPackets.packets+"<br/> From: "+maxPackets.source.id+" -> To: "+ maxPackets.target.id +"</p>");
+$('#chartPreferences').append( "<br/><p class='category'>Time Frame: "+data.result.header.time_range.start+" - "+data.result.header.time_range.end+":</p>");
 
   function ticked() {
 
